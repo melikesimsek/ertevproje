@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ertevproje.Site1" %>
+
+<!DOCTYPE html>
+
+<html lang="tr">
+<head runat="server">
+    <meta charset="utf-8">
+    <title>Ertev - Ermetal Teknolojik Eğitimler Vakfı</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.svg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+      <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-dark px-lg-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item border-right border-secondary">
+                            <p class=" nav-link text-body small"><i class="fa fa-map-marker-alt mr-2"></i>1. Nilüfer Sk. No:5, 16369 DOSAB/Bursa</p>
+                        </li>
+                        <li class="nav-item border-right border-secondary">
+                             <p class="nav-link text-body small"><i class="fa fa-envelope mr-2"></i>edu@ertev.org</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body small" href="adminhome.aspx">Giriş</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right d-none d-md-block">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-auto mr-n2">
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://twitter.com/ertevorg"><small class="fab fa-twitter"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.facebook.com/ertevorg"><small class="fab fa-facebook-f"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.linkedin.com/company/ertevorg/"><small class="fab fa-linkedin-in"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.instagram.com/ertevorg/"><small class="fab fa-instagram"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="https://www.youtube.com/channel/UCz_FooVydJ8b7wPNS-ydspw"><small class="fab fa-youtube"></small></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center bg-white py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="index.aspx" class="navbar-brand p-0 d-none d-lg-block">
+                    <h1 class="m-0 display-4 text-uppercase text-primary">er<span class="text-secondary font-weight-normal">tev</span></h1>
+                    <h6><i>Ermetal Teknolojik Eğitimler Vakfı</i></h6>
+                </a>
+                                            
+
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <div class="mb-4 text-uppercase font-weight-bold">
+                    <img src="img/support.png"/> +90 224 280 20
+                </div>
+              </div>  
+          </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            
+                  <span><a class="nav-link text-body small" href="adminhome.aspx">Giriş</a></span>
+            </button>
+            <a href="index.aspx" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-uppercase text-primary">er<span class="text-white font-weight-normal">tev</span></h1>
+              
+            </a>
+            
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+                
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.aspx" class="nav-item nav-link">Anasayfa</a>
+                     <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kurumsal</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="tarihce.aspx" class="dropdown-item">Tarihçe</a>
+                            <a href="hakkimizda.aspx" class="dropdown-item">Hakkımızda</a>
+                            <a href="fg.aspx" class="dropdown-item">Fahrettin Gülener Kimdir?</a>
+                        </div>
+                    </div>
+<%--                 <a href="single.html" class="nav-item nav-link">Eğitimlerimiz</a>--%>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Eğitimlerimiz</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="plc.aspx" class="dropdown-item">PLC Kusu</a>
+                            <a href="cnc.aspx" class="dropdown-item">CNC Kursu</a>
+                            <a href="wt.aspx" class="dropdown-item">Web Tasarımı</a>
+                            <a href="basvuru.aspx" class="dropdown-item">Başvuru Formu</a>
+                        </div>
+                    </div>
+                    <a href="ekip.aspx" class="nav-item nav-link">Ekibimiz</a>
+
+                    <a href="iletisim.aspx" class="nav-item nav-link">Bize Ulaşın</a>
+                </div>
+                </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+       <!-- Footer Start -->
+    <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
+        <div class="row py-4">
+            <div class="col-lg-6 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Bize Ulaşın</h5>
+                <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>1. Nilüfer Sk. No:5, 16369 DOSAB/Bursa</p>
+                <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>+90 224 280 20 00</p>
+                <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>edu@ertev.org</p>
+                <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Sosyal Medya Hesaplarımız</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://twitter.com/ertevorg"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://www.facebook.com/ertevorg"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://www.linkedin.com/company/ertevorg/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://www.instagram.com/ertevorg/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square" href="https://www.youtube.com/channel/UCz_FooVydJ8b7wPNS-ydspw"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+         
+          <div class="col-lg-6 col-md-6 mt-0">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.260774153007!2d29.06037471535117!3d40.26995707938255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca411ff659c4a3%3A0x14872880525f419f!2sErmetal%20Teknolojik%20E%C4%9Fitimler%20Vakf%C4%B1!5e0!3m2!1str!2str!4v1665143187053!5m2!1str!2str" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; <a href="https://www.ertev.org/">ertev.org</a> 
+		
+		<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+	<%--	Design by <a href="https://htmlcodex.com">HTML Codex</a></p>--%>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
